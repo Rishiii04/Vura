@@ -48,22 +48,24 @@
    
    font-family: "Merienda", cursive;
     color: rgb(0, 0, 0);
-    text-shadow: -8px 2px 15px #fcdeab;
+    text-shadow: -0px 0px 10px #d8a48f,0 0 20px #faf7f0,0 0 30px #a5b68d; 
     text-align: center;
     margin-top: 2%;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 600;
     
 
 }
 #h{
-    font-size: 80px;
+    font-size: 140px;
     font-family: "Great Vibes", cursive;
     color: rgb(0, 0, 0);
     text-align: center;
    text-shadow: 0px 0px 15px #f5e6cc;
     text-shadow: -0px 0px 10px #d8a48f,0 0 20px #a5b68d,0 0 30px #a5b68d;
-   font-weight: 520;
+   font-weight: 600;
     margin-bottom: 1%;
+    margin-top: 1%;
     font-style: italic;
 }
 #p1{
@@ -73,10 +75,9 @@
     
     margin:0% ;
     word-spacing: 5.5px;
-    text-shadow: -0px 0px 10px #d8a48f,0 0 20px #faf7f0,0 0 30px #a5b68d;
+    text-shadow: 0px 0px 10px #d8a48f,0 0 10px #faf7f0,0 0 30px #a5b68d;
     color: #faf7f0;
     font-weight: bold;
-    
 }
 body{
     background-image: url('/images/ACOZYF~1.JPG');
@@ -106,4 +107,5 @@ html{
     border:2px solid #f5e6cc;
     border-radius: 25px;
 }
+
 
