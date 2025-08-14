@@ -8,20 +8,76 @@
     margin: 1%;
     padding: 10px;
 }
+#icon{
+    border: 5px solid white;
+    border-radius: 25px;
+    
+}
+.c2{
+    margin-right: 5%;
+}
 .sub{
-    background-color: beige;
-    border: 2px solid rgb(247, 219, 179);
+    background-color: #ffd8be;
+    border: 2px solid #ffd8be;
     margin: 30px;
     font-size: 15px ;
     float: inline-end;
-    padding: 1%;
+    padding: 12px;
     border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 
+}
+.c1{
+    background-color: rgb(255, 255, 255);
+    border: 0px solid rgb(247, 219, 179);
+    background: transparent;
+    margin: 10px;
+    font-size: 15px ;
+    padding: 4%;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 8%;
+    margin-right: 70%;
+    
+
+}
+#p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 2%;
+    font-size: 40px;
+    font-style: italic;
+}
+#h{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+   
+    margin-bottom: 2%;
+    font-style: italic;
+}
+#p1{
+    
+  font-style: italic;
+    padding:6%;
+    margin: 2%;
+    
 }
 body{
     background-image: url('/images/ACOZYF~1.JPG');
     background-repeat: no-repeat;
     background-size: cover;
-
-
+    border: 2px solid #f5e6cc;
+    border-radius: 25px;
+   
+}
+html{
+    background-color: #f5e6cc;
+    border:2px solid #f5e6cc;
+    border-radius: 25px;
 }
