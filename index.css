@@ -1,0 +1,26 @@
+#head{
+    font-size: 42px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:transparent;
+    text-align: center;
+    float: inline-start;
+    border-radius: 25px;
+    margin: 1%;
+    padding: 10px;
+}
+.sub{
+    background-color: beige;
+    border: 2px solid rgb(247, 219, 179);
+    margin: 30px;
+    font-size: 15px ;
+    float: inline-end;
+    padding: 1%;
+    border-radius: 25px;
+
+}
+body{
+    background-image: url('/vura/images/A\ cozy\ flat-lay\ background\ with\ neatly\ rolled\ yarn\ balls\ in\ beige\,\ peach\,\ teal\,\ and\ cream\,\ arranged\ aesthetically\ on\ a\ soft\ beige\ surface.\ Include\ knitting\ needles\,\ crochet\ hooks\,\ and\ a\ cup\ with\ yarn\ inside.\ Minima.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
