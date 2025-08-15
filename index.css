@@ -96,7 +96,12 @@ body{
     background-size: cover;
     border: 2px solid #f5e6cc;
     border-radius: 25px;
+    opacity: 0;
+  transition: opacity 1s ease-in;
    
+}
+body.loaded {
+  opacity: 1;
 }
 body::before {
     content: "";
@@ -118,6 +123,55 @@ html{
     background-color: #ccbb9e;
    
 }
+/* splash Screen */
+.intro {
+   position: fixed;
+	z-index: 9999;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 100vh;
+	background-color: #faf7f0;
+	transition: 1s;
+}
+.logo-header{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+    font-size: 70px;
+	transform: translate(-50%, -50%);
+	color: #3b2f2f;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.logo{
+	position: relative;
+	display: inline-block;
+	bottom: -20px;
+	opacity: 0;
+}
+
+.logo.active{
+	bottom: 0;
+	opacity: 1;
+	transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+	bottom: 0;
+	opacity: 0;
+	transition: ease-in-out 0.5s;
+}
+
+#landing {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#landing.visible {
+  opacity: 1;
+}
+
 
 
 
