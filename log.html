@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vura - Join Our Creative Journey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="log.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1 class="brand-header">Vura</h1>
+        <h2 class="sub1">Crochet Varta - Weaving Luxury, One Thread at a Time</h2>
+        <p class="sub2">Welcome to Vura, a handmade luxury brand where every loop of yarn tells a story of artistry, patience, and timeless elegance. Our crochet creations are not just products, but soulful pieces crafted with passion to bring warmth, comfort, and sophistication into your life.</p>
+        <div class="auth-card">
+            <div class="auth-toggle">
+                <button class="toggle-btn active" id="loginToggle">Login</button>
+                <button class="toggle-btn" id="signupToggle">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form class="auth-form" id="loginForm">
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-input" placeholder="Password" required>
+                </div>
+                <div class="form-extras">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+                <p class="switch-text">
+                    New to Vura? <span class="switch-link" id="showSignup">Create an account</span>
+                </p>
+            </form>
+
+            <!-- Signup Form -->
+            <form class="auth-form hidden" id="signupForm">
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-input" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-input" placeholder="Confirm Password" required>
+                </div>
+                <div class="form-extras">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to Terms & Conditions</label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+                <p class="switch-text">
+                    Already have an account? <span class="switch-link" id="showLogin">Sign in here</span>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="log.js"></script>
+</body>
+</html>

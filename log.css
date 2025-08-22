@@ -1,0 +1,322 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Merienda', cursive;
+            background-image: url("/vura/images/A\ cozy\ flat-lay\ background\ with\ neatly\ rolled\ yarn\ balls\ in\ beige\,\ peach\,\ teal\,\ and\ cream\,\ arranged\ aesthetically\ on\ a\ soft\ beige\ surface.\ Include\ knitting\ needles\,\ crochet\ hooks\,\ and\ a\ cup\ with\ yarn\ inside.\ Mi.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+           
+            overflow-x: hidden;
+        }
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+     backdrop-filter: blur(5px);
+        z-index: 1;
+}
+body > * {
+    position: relative;
+    z-index: 2;
+}
+   
+        /* Main container */
+        .container {
+            position: relative;
+            z-index: 10;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Brand logo */
+        .brand-header {
+            position: absolute;
+            top: 40px;
+            left: 7%;
+            transform: translateX(-50%);
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: #3b2f2f;
+            text-shadow: 2px 2px 10px rgba(216, 164, 143, 0.5);
+            z-index: 15;
+            animation: brandSlide 1s ease-out;
+        }
+
+        @keyframes brandSlide {
+            0% { opacity: 0; transform: translateX(-50%) translateY(-30px); }
+            100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+        .sub1{
+            position: absolute;
+            top: 250px;
+            left: 34%;
+            transform: translateX(-50%);
+            
+            font-size: 40px;
+            color: #3b2f2f;
+            text-shadow: 2px 2px 10px rgba(216, 164, 143, 0.5);
+            z-index: 15; 
+            animation: brandSlide 1s ease-out;
+        }
+
+.sub2{
+            position: absolute;
+            top: 420px;
+            left: 34%;
+            transform: translateX(-50%);
+            
+            font-size: 18px;
+            color: #3b2f2f;
+            text-shadow: 2px 2px 10px rgba(216, 164, 143, 0.5);
+            z-index: 15; 
+            animation: brandSlide 1s ease-out;
+        }
+        
+        /* Auth card */
+        .auth-card {
+            background: rgba(249, 246, 241, 0.25);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            padding: 3rem 2.5rem;
+            width: 100%;
+            max-width: 420px;
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.1),
+                0 10px 20px rgba(216, 164, 143, 0.2);
+            animation: cardEntry 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            overflow: hidden;
+            left:35%;
+        }
+
+       
+        @keyframes cardEntry {
+            0% { 
+                opacity: 0; 
+                transform: translateY(50px) scale(0.8);
+            }
+            100% { 
+                opacity: 1; 
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Toggle buttons */
+        .auth-toggle {
+            display: flex;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            padding: 6px;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .toggle-btn {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            background: transparent;
+            border-radius: 20px;
+            font-family: 'Merienda', cursive;
+            font-weight: 600;
+            color: #3b2f2f;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .toggle-btn.active {
+            background: rgba(216, 164, 143, 0.8);
+            color: white;
+            box-shadow: 0 4px 12px rgba(216, 164, 143, 0.3);
+        }
+
+        /* Form styles */
+        .auth-form {
+            opacity: 0;
+            transform: translateX(20px);
+            animation: formSlide 0.6s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes formSlide {
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            font-family: 'Merienda', cursive;
+            font-size: 0.95rem;
+            color: #3b2f2f;
+            transition: all 0.3s ease;
+        }
+
+        .form-input::placeholder {
+            color: rgba(59, 47, 47, 0.6);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #a5b68d;
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 0 20px rgba(165, 182, 141, 0.2);
+        }
+
+        /* Checkbox and forgot password */
+        .form-extras {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #a5b68d;
+        }
+
+        .forgot-link {
+            color: #357266;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .forgot-link:hover {
+            color: #d8a48f;
+        }
+
+        /* Submit button */
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #d8a48f 0%, #a5b68d 100%);
+            color: white;
+            font-family: 'Merienda', cursive;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(216, 164, 143, 0.4);
+        }
+
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Switch text */
+        .switch-text {
+            text-align: center;
+            margin-top: 2rem;
+            color: #3b2f2f;
+            font-size: 0.9rem;
+        }
+
+        .switch-link {
+            color: #357266;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .switch-link:hover {
+            color: #d8a48f;
+        }
+
+        /* Hidden class for form switching */
+        .hidden {
+            display: none;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .brand-header {
+                font-size: 2.8rem;
+                top: 30px;
+            }
+
+            .auth-card {
+                padding: 2rem 1.5rem;
+                margin-top: 60px;
+            }
+
+            .yarn-ball {
+                width: 60px;
+                height: 60px;
+            }
+
+            .wool-texture {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .auth-card {
+                padding: 1.5rem 1rem;
+            }
+
+            .brand-header {
+                font-size: 2.2rem;
+            }
+        }
