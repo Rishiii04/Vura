@@ -222,6 +222,76 @@ h3{
     flex: 1.5;
   transform: scale(1);
 }
+/* Customize Section */
+#customize {
+  margin: 3% auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 25px;
+  border: 1px solid #b89f8a;
+  text-align: center;
+  font-family: "Merienda", cursive;
+  max-width: 900px;
+}
+
+.customize-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-item {
+  flex: 1 1 250px;
+  background: #f9f6f1;
+  border: 1px solid #d8a48f;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 16px;
+  color: #3b2f2f;
+}
+
+/* Hide default file input */
+#designUpload {
+  display: none;
+}
+
+/* Style custom label as button */
+.custom-upload-label {
+  display: inline-block;
+  background: #d8a48f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.custom-upload-label:hover {
+  background: #b89f8a;
+  transform: scale(1.05);
+}
+
+#colorChoice {
+  padding: 8px 15px;
+  border-radius: 12px;
+  border: 1px solid #b89f8a;
+  font-family: inherit;
+  background: #fff;
+  cursor: pointer;
+}
+
+#previewBox {
+  margin-top: 10px;
+  border: 1px dashed #b89f8a;
+  border-radius: 15px;
+  padding: 40px;
+  background: #faf7f0;
+  font-style: italic;
+  color: #7a5c5c;
+}
 /* footer  */
 .footer {
   background: #f8f5ec;
@@ -386,3 +456,4 @@ html{
 #landing.visible {
   opacity: 1;
 }
+
