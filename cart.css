@@ -91,7 +91,7 @@
             justify-content: center;
             background: linear-gradient(135deg, #faf7f0 0%, #f9f6f1 50%, #f2ebe2 100%);
             position: relative;
-            background-image: url('/vura/images/cb2.jpg');
+            background-image: url('images/cb2.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             overflow: hidden;
@@ -528,4 +528,5 @@
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
+
         }
